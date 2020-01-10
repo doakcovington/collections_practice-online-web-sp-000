@@ -46,16 +46,10 @@ end
 
 #replaces the third character in each string with a $
 def kesha_maker(array)
-  kesha_array = []
-
-  array.each do |name|
-    name_array = name.split("")
-    name_array[2] = "$"
-    result = name_array.join
-    kesha_array << result
+  array.each do |character|
+    character[2] = "$"
   end
-
-  kesha_array
+  array
 end #end of kesha_array method
 
 #returns all strings that start with the letter "a"
